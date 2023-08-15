@@ -21,11 +21,7 @@ import java.util.List;
 public class DevRunner implements ApplicationRunner {
     // A logger for print
     private static final Logger logger = LoggerFactory.getLogger(DevRunner.class);
-
-
     private final CustomerService customerService;
-
-
     public DevRunner(CustomerService customerService) {
         this.customerService = customerService;
     }
