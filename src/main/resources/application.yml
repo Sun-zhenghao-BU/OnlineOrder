@@ -11,6 +11,9 @@ spring:
     init:
       mode: ${INIT_DB:always}
       schema-locations: "classpath:database-init.sql"
+  cache:
+    caffeine:
+      spec: expireAfterWrite=15s
 
 logging:
   level:
